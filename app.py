@@ -14,7 +14,8 @@ st.header('Jogando uma moeda')
 
 chart = st.line_chart([0.5])
 
-def toss_coin(n): # função que emula o lançamento de uma moeda
+def toss_coin(n): 
+    """função que emula o lançamento de uma moeda"""
 
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
 
@@ -49,3 +50,4 @@ if start_button:
     st.session_state['df_experiment_results'] = st.session_state['df_experiment_results'].reset_index(drop=True)
 
 st.write(st.session_state['df_experiment_results'])
+# End-of-file (EOF)
