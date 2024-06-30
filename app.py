@@ -14,7 +14,7 @@ st.header('Jogando uma moeda')
 
 chart = st.line_chart([0.5])
 
-def toss_coin(n): 
+def toss_coin(n):   
     """função que emula o lançamento de uma moeda"""
 
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
